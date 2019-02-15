@@ -2,7 +2,7 @@
   <v-layout>
     <v-flex text-xs-center>
       <p>{{ $store.state.message }}</p>
-      <div class="link" @click="$store.commit('count')" @click.shift="$store.commit('reset')">
+      <div class="link" @click="$store.dispatch('doit')" @click.shift="$store.commit('reset')">
         <a>clicked!: {{ $store.state.counter }}</a>
       </div>
       <img src="/v.png" alt="Vuetify.js" class="mb-5">
